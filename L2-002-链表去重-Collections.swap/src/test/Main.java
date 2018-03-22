@@ -1,8 +1,7 @@
 package test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+
 import java.util.Collections;
 import java.util.Scanner;
  
@@ -21,54 +20,63 @@ public class Main {
 			a.key = cin.nextInt();
 			a.next = cin.next();
 			
-			//每次加节点进来前都判断一下链表里有没有 有就放进delete 没有
-			for(int j=0;j<al.size();j++){
-				if(Math.abs(a.key)==Math.abs(al.get(j).key))
+			 for(int j=0;j<al.size();j++){
+				if(Math.abs(a.key)==Math.abs(al.get(j).key)){
 					isIn = true;
+					break;
+				}
+				
+					
 			}
 			if(isIn)
 				delete.add(a);
-			else
-				al.add(a);
+			else{
+				if(Integer.parseInt(a.add)==start){
+					al.add(0, a);
+				}else{
+					al.add(a);
+				}
+				
+			}
+				
 			
 		}
-		 
-		
-		//按照首地址冒泡排序一下
+ 
+	 
+	 
 		for(int i=0;i<al.size()-1;i++){
-			for(int j=0;j<al.size()-i-1;j++){
+			for(int j=1;j<al.size()-i-1;j++){
 				if(Integer.parseInt(al.get(j).add)>Integer.parseInt(al.get(j+1).add)){
-					 
 					Collections.swap(al, j, j+1);
 				}
 			}
 		}
 		
+	
+		
+		
 		for(int i=0;i<delete.size()-1;i++){
 			for(int j=0;j<delete.size()-i-1;j++){
-				if(Integer.parseInt(delete.get(j).add)>Integer.parseInt(delete.get(j+1).add)){
-					 
+				if(Integer.parseInt(delete.get(j).add)>Integer.parseInt(delete.get(j+1).add)){	  
 					Collections.swap(delete, j, j+1);
 				}
 			}
 		}
 		
-		
 		 
 		 
-		
-		/*
-		 * next调整好就好了
-		 */
+	 
 		for(int i=0;i<al.size()-1;i++){
 			al.get(i).next = al.get(i+1).add;
 		}
 		al.get(al.size()-1).next="-1";
 		
-		for(int i=0;i<delete.size()-1;i++){
-			delete.get(i).next = delete.get(i+1).add;
+		if(delete.size()!=0){
+			for(int i=0;i<delete.size()-1;i++){
+				delete.get(i).next = delete.get(i+1).add;
+			}
+			delete.get(delete.size()-1).next="-1";
 		}
-		delete.get(delete.size()-1).next="-1";
 		
 		
 		for(int i=0;i<al.size();i++){
@@ -79,6 +87,7 @@ public class Main {
 		for(int i=0;i<delete.size();i++){
 			System.out.println(delete.get(i).add+" "+delete.get(i).key+" "+delete.get(i).next);
 		}
+		 
 		 
 	}
 	
