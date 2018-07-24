@@ -10,3 +10,4 @@
 | :----:|:----:|  
 |  PATA1042   |  取模问题  | 
 | PATA1046| 数组预处理 |
+|PATA1065|[溢出](https://coolshell.cn/articles/11466.html)|
