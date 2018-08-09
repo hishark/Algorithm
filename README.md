@@ -31,5 +31,5 @@
 |PATA1077|[字符串处理][C++如何输入含空格的字符串](https://blog.csdn.net/zhouhongkai06/article/details/79035005)</br>用getline之前要记得用getchar把换行符吸收掉~|
 |PATB1015/PATA1062|[排序]重点在分类 分好类就不难了|
 |PATA1012|[排序]排序的问题记得要单独处理第一名 第一名之后的人的名次是他前面的人数+1（分数相同时排名和上一个人的排名相同） 这一题now用的巧妙|
-|PATA1028|[排序]char a[10]="hello";char b[10]="hello" a等于b哦，a和b都是地址，判断两个字符串是否相等用strcmp|
+|PATA1028|[排序]char a[10]="hello";char b[10]="hello" a不等于b哦，a和b都是地址，判断两个字符串是否相等用strcmp|
 |PATA1055|[排序]预处理可以显著降低查询的复杂度|
