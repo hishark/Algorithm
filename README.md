@@ -29,4 +29,6 @@
 |PATB1048|结果串ans一定要初始化为空字符串，不然会出现奇奇怪怪的结果</br>char转int char-'0' int转char int+'0'</br>char A[101]={0}是将整个字符串初始化为空值</br>memset(A, '0', sizeof(A))是把整个字符串初始化为“000....000”|
 |PATA1005|12345如果想从前往后输出直接用递归就好了|
 |PATA1077|[C++如何输入含空格的字符串](https://blog.csdn.net/zhouhongkai06/article/details/79035005)</br>用getline之前要记得用getchar把换行符吸收掉~|
+|PATB1015/PATA1062|重点在分类 分好类就不难了|
+|PATA1012|排序的问题记得要单独处理第一名 第一名之后的人的名次是他前面的人数+1（分数相同时排名和上一个人的排名相同） 这一题now用的巧妙|
 
