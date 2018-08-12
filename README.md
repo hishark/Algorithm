@@ -33,3 +33,7 @@
 |PATA1012|[排序]排序的问题记得要单独处理第一名 第一名之后的人的名次是他前面的人数+1（分数相同时排名和上一个人的排名相同） 这一题now用的巧妙|
 |PATA1028|[排序]char a[10]="hello";char b[10]="hello" a不等于b哦，a和b都是地址，判断两个字符串是否相等用strcmp|
 |PATA1055|[排序]预处理可以显著降低查询的复杂度|
+|PATB1029/PATA1084|[散列]hashtable长度一般直接设置为ASCII码的个数128即可|
+|PATB1033|[散列]字符串输入可能为空 所以不能用cin 要用getline（坑了我半小时886）</br>bool数组初始值默认是false，全置为true用memset，直接bool flag[10]={true}只有第一个是true哦</br>int a[10]={0}可以全置为0，={1}无法全置为1|
+|PATB1038|[散列]用cincout会超时，要用scanfprintf|
+
