@@ -36,4 +36,7 @@
 |PATB1029/PATA1084|[散列]hashtable长度一般直接设置为ASCII码的个数128即可|
 |PATB1033|[散列]字符串输入可能为空 所以不能用cin 要用getline（坑了我半小时886）</br>bool数组初始值默认是false，全置为true用memset，直接bool flag[10]={true}只有第一个是true哦</br>int a[10]={0}可以全置为0，={1}无法全置为1|
 |PATB1038|[散列]用cincout会超时，要用scanfprintf|
-
+|PATB1039/PATA1092|[散列]change函数有点意思|
+|PATB1042|[散列]输入有空格别用cin啊啊啊用getline（这次反应的快一点了）|
+|PATA1050|[散列]这题用string会有两个测试点过不了 很奇怪 char[]没问题|
+|PATA1048|[散列]i和m-i|
