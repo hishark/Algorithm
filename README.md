@@ -40,3 +40,6 @@
 |PATB1042|[散列]输入有空格别用cin啊啊啊用getline（这次反应的快一点了）|
 |PATA1050|[散列]这题用string会有两个测试点过不了 很奇怪 char[]没问题|
 |PATA1048|[散列]i和m-i|
+|PATA1037|[贪心]第二个循环注意是i和j 不要都写成i了|
+|PATA1038|[贪心]string.erase/cmp是关键/前导0不确定个数 while别写成if|
+|PATB1030/PATA1085|[二分]upper_bound返回的是指针，想获得下标要减去数组首地址|
