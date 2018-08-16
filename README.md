@@ -43,3 +43,6 @@
 |PATA1037|[贪心]第二个循环注意是i和j 不要都写成i了|
 |PATA1038|[贪心]string.erase/cmp是关键/前导0不确定个数 while别写成if|
 |PATB1030/PATA1085|[二分]upper_bound返回的是指针，想获得下标要减去数组首地址|
+|PATA1044|[二分]设sum[i]表示A[1]到A[i]的和，然后再求任意区间的连续序列和就很方便了。例如A3+A4+A5=sum[5]-sum[2]/upper_bound|
+
+
