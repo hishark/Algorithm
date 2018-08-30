@@ -54,4 +54,5 @@
 |PATA0163|[stl-set]统计数量的时候，很多情况下可以置初值为max，然后碰到不符合条件的就减一</br>printf("%.1f%")可输出百分比，如果要紧跟一个百分号的话再自己加一个%</br>st.find(value)!=st.end()为true就表示在st中找到了value|
 |PATA1054|[stl-map]善用find()，贼方便|
 |PAYA1071|[stl-map]千万不要用cin输入string，因为输入有空格，要用getline(cin,string)啦|
+|LEETCODE-1|暴力一时爽 还是用哈希表吧|
 
