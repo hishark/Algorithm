@@ -53,4 +53,4 @@
 |PATA1054|[stl-map]善用find()，贼方便|
 |PAYA1071|[stl-map]千万不要用cin输入string，因为输入有空格，要用getline(cin,string)啦|
 |LEETCODE-1|暴力一时爽 还是用哈希表吧|
-
+|PATA1052|[链表]静态链表/第三个参数注意别写成next了，已经排好序了所以直接输出下一个结点的address即可/记得特判|
