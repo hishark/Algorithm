@@ -7,7 +7,8 @@
 const int maxn = 30;
 int n,V,maxValue = 0;//物品件数n，背包容量V，最大价值maxValue
 int w[maxn],c[maxn];
-//DFS,index为当前处理的物品编号(index从0~n-1)
+//DFS
+//index为当前处理的物品编号(index从0~n-1)
 //sumW和sumC分别为当前总重量和当前总价值
 void DFS(int index,int sumW,int sumC){
 	//已经完成了对n件物品的选择（死胡同） 
@@ -21,12 +22,19 @@ void DFS(int index,int sumW,int sumC){
 	DFS(index+1,sumW,sumC);//不选第index件物品
 	DFS(index+1,sumW+w[index],sumC+c[index]);//选第index件物品 
 } 
+/**
+这种方法更好
+更易于理解
+走到死胡同了立马就return返回呀
+很符合现实逻辑哈哈哈哈
+上面那个走到死胡同的还要停下来做数学题就算了吧 
+**/ 
 void dfs(int index,int sumW,int sumC){
 	if(index==n){
 		return;//已经完成对n件物品的选择 （死胡同） 
 	}
 	dfs(index+1,sumW,sumC);//不选第index件物品
-	//只有加入第index件物品后未超过容量V，才能继续
+	//只有加入第index件物品后未超过容量V，才能选择第index件物品 
 	if(sumW+w[index]<=V){
 		if(sumC+c[index]>maxValue){
 			maxValue = sumC+c[index];

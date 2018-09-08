@@ -15,6 +15,7 @@ vector<int> temp,ans;
 
 //当前处理index号整数，当前已选整数个数为nowK
 //当前已选整数之和为sum，当前已选整数平方和为sumSqu
+//这几个参数都很重要缺一不可 
 void dfs(int index,int nowK,int sum,int sumSqu){
 	//找到k个数的和为x 
 	if(nowK==k&&sum==x){
