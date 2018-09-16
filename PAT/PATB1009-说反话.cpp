@@ -19,9 +19,11 @@ using namespace std;
 int main() {
     char result[81][81];
     int num = 0;
+    
     while(scanf("%s", result[num])!=EOF){
         num++;
     }
+    
     for(int i=num-1;i>=0;i--){
         if(i==num-1){
             cout<<result[i];

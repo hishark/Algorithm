@@ -19,7 +19,7 @@ int main(){
 	for(int j=0;j<=lenB;j++){
 		dp[0][j] = 0;
 	}
-	
+
 	//×´Ì¬×ªÒÆ·½³Ì
 	for(int i=1;i<=lenA;i++){
 		for(int j=1;j<=lenB;j++){
