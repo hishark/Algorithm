@@ -1,0 +1,33 @@
+import java.util.*;
+//冒泡排序
+//时间复杂度：O(N^2)
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        int arr[] = new int[]{12,3,4,5,6,7,2,3,24,6,9};
+        BubbleSort.bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+}
+class BubbleSort{
+    public static void bubbleSort(int[] arr){
+        //记得判断是否为空
+        if(arr==null||arr.length()==0){
+            return;
+        }
+        
+        //若不为空
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=arr.length-1;j>i;j--){
+                if(arr[j]<arr[j-1]){
+                    swap(arr,j,j-1);
+                }
+            }
+        }
+    }
+    public static void swap(int[] arr,int i,int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+} 
