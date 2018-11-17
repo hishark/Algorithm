@@ -17,7 +17,7 @@ class QuickSort{
 		int pivotPointer = left;
 
 
-		//右指针找比基准数小的，左指针找比基准数小的
+		//右指针找比基准数小的，左指针找比基准数大的
 		while(left<right){
 			//先移动右指针，原因http://www.cnblogs.com/wxisme/p/5243631.html
 			while(left<right && arr[right]>=pivotKey){
