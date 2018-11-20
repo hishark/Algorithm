@@ -9,7 +9,7 @@ import java.util.*;
 public class Main{
 	public static void main(String[] args){
 		int[] a = new int[]{9,5,2,6,7,3,1,3,2};
-		QuickSort.sort(a);
+		MergeSort.mSort(a,0,a.length-1);
 		System.out.println(Arrays.toString(a));
 	}
 }

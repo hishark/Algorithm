@@ -1,15 +1,26 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        Arrays.sort(nums);
+        Arrays.sort(nums);//简洁省事牛逼只要4ms
         return nums[nums.length-k];
     }
 }
 
-//自己写快排。。。比直接Arrays.sort慢了好多啊
+//快速选择！比直接Arrays.sort慢了好多啊!
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        sortt(nums);
-        return nums[nums.length-k];
+        k = nums.length - k;
+        int l = 0, h = nums.length - 1;
+        while (l < h) {
+            int j = partition(nums, l, h);
+            if (j == k) {
+                break;
+            } else if (j < k) {
+                l = j + 1;
+            } else {
+                h = j - 1;
+            }
+        }
+        return nums[k];
     }
     
     public int partition(int[] arr,int left,int right){
@@ -28,22 +39,12 @@ class Solution {
         arr[left] = pivotKey;
         return left;
     }
-    
-    public void quickSort(int[] arr,int left,int right){
-        if(left>=right){
-            return;
-        }
-        int pivotPos = partition(arr,left,right);
-        quickSort(arr,left,pivotPos-1);
-        quickSort(arr,pivotPos+1,right);
-    }
-    
-    public void sortt(int[] arr){
-		if(arr==null||arr.length==0){
-			return;
-		}
 
-		quickSort(arr,0,arr.length-1);
-	}
+    private void swap(int[] a, int i, int j) {
+        int t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+    }
 }
+
 

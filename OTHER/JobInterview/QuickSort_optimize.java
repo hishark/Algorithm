@@ -38,7 +38,7 @@ class QuickSort{
 			while(left<right && arr[left]<=pivotKey){
 				left++;
 			}
-			//↑左指针找到了第一个比基准数大的数，就停止循环，并把小的数移动到左边
+			//↑左指针找到了第一个比基准数大的数，就停止循环，并把大的数移动到右边
 			arr[right] = arr[left];
 		}
 		//把基准值赋值给两个指针碰头的地方，也就是中间
