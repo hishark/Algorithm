@@ -11,6 +11,7 @@ CyC大佬的题解一级棒👉[CyC-CS-Notes](https://github.com/CyC2018/CS-Note
 
 | 题号 | 注意点 |  
 | :----:|:----:|  
+|LEETCODE61|[数组]关键还是%=10啦|
 |PATA1042|[模拟]取模问题| 
 |PATA1046|[模拟]数组预处理|
 |PATA1065|[模拟][溢出](https://coolshell.cn/articles/11466.html)|
