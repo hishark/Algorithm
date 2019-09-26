@@ -11,9 +11,9 @@ CyC大佬的题解一级棒👉[CyC-CS-Notes](https://github.com/CyC2018/CS-Note
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
-|[LEETCODE13](https://github.com/hishark/Algorithm/blob/master/LEETCODE/13.%20罗马数字转整数.java)|[数学/字符串]HashMap|
-|[LEETCODE9](https://github.com/hishark/Algorithm/blob/master/LEETCODE/9.%20%E5%9B%9E%E6%96%87%E6%95%B0.java)|[数学]倒转数字比较即可（不转换为字符串🙅‍♀️）|
-|[LEETCODE66](https://github.com/hishark/Algorithm/blob/master/LEETCODE/66.%20%E5%8A%A0%E4%B8%80.java)|[数组]关键还是%=10啦|
+|LEETCODE-13 [Q](https://leetcode-cn.com/problems/roman-to-integer/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/13.%20罗马数字转整数.java)|[数学/字符串]HashMap|
+|LEETCODE-9 [Q](https://leetcode-cn.com/problems/palindrome-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/9.%20%E5%9B%9E%E6%96%87%E6%95%B0.java)|[数学]倒转数字比较即可（不转换为字符串🙅‍♀️）|
+|LEETCODE-66 [Q](https://leetcode-cn.com/problems/plus-one/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/66.%20%E5%8A%A0%E4%B8%80.java)|[数组]关键还是%=10啦|
 |PATA1042|[模拟]取模问题| 
 |PATA1046|[模拟]数组预处理|
 |PATA1065|[模拟][溢出](https://coolshell.cn/articles/11466.html)|
