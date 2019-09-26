@@ -60,7 +60,7 @@ A: Answer
 |PATA0163|[stl-set]统计数量的时候，很多情况下可以置初值为max，然后碰到不符合条件的就减一</br>printf("%.1f%")可输出百分比，如果要紧跟一个百分号的话再自己加一个%</br>st.find(value)!=st.end()为true就表示在st中找到了value|
 |PATA1054|[stl-map]善用find()，贼方便|
 |PATA1071|[stl-map]千万不要用cin输入string，因为输入有空格，要用getline(cin,string)啦|
-|LEETCODE-1|暴力一时爽 还是用哈希表吧|
+|LEETCODE-1 [Q](https://leetcode-cn.com/problems/two-sum/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1.%20两数之和.java) |暴力一时爽 还是用哈希表吧|
 |PATA1052|[链表]静态链表/第三个参数注意别写成next了，已经排好序了所以直接输出下一个结点的address即可/记得特判|
 |ReHeLu|int转string 用stringstream|
 |PATA1103|[DFS]感觉最重要的一步还是预处理，以及字典序的要求可以直接靠从最大值开始遍历来解决|
