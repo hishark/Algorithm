@@ -1,11 +1,13 @@
 做算法题真的很为难我这个猪脑子( ¯(∞)¯ )
 
-越辣鸡越要练啊大哥
-
-がんばって(ง •_•)ง
+越辣鸡越要练啊大哥(ง •_•)ง
 
 LeetCode
-CyC大佬的题解一级棒👉[CyC-CS-Notes](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+CyC的题解👉[CyC-CS-Notes](https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+
+Q: Question
+
+A: Answer
 
 🎈
 
