@@ -13,6 +13,7 @@ A: Answer
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-20 [Q](https://leetcode-cn.com/problems/valid-parentheses/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.java)|[栈/字符串]递归结构的问题用栈解决方便的一批|
 |LEETCODE-13 [Q](https://leetcode-cn.com/problems/roman-to-integer/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/13.%20罗马数字转整数.java)|[数学/字符串]HashMap|
 |LEETCODE-9 [Q](https://leetcode-cn.com/problems/palindrome-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/9.%20%E5%9B%9E%E6%96%87%E6%95%B0.java)|[数学]倒转数字比较即可（不转换为字符串🙅‍♀️）|
 |LEETCODE-66 [Q](https://leetcode-cn.com/problems/plus-one/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/66.%20%E5%8A%A0%E4%B8%80.java)|[数组]关键还是%=10啦|
