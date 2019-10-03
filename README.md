@@ -12,6 +12,7 @@ A: Answer
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-28 [Q](https://leetcode-cn.com/problems/implement-strstr/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/28.%20%E5%AE%9E%E7%8E%B0strStr().java)|[字符串/双指针]重点是i-j|
 |LEETCODE-27 [Q](https://leetcode-cn.com/problems/remove-element/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/27.%20%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.java)|[数组/双指针]法一很简单，法二交换再释放有点意思|
 |LEETCODE-20 [Q](https://leetcode-cn.com/problems/valid-parentheses/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.java)|[栈/字符串]递归结构的问题用栈解决方便的一批|
 |LEETCODE-13 [Q](https://leetcode-cn.com/problems/roman-to-integer/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/13.%20罗马数字转整数.java)|[数学/字符串]HashMap|
