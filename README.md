@@ -12,6 +12,7 @@ A: Answer
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-38 [Q](https://leetcode-cn.com/problems/count-and-say/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/38.%20%E6%8A%A5%E6%95%B0.java)|[字符串]StringBuilder|
 |LEETCODE-35 [Q](https://leetcode-cn.com/problems/search-insert-position/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/35.%20%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.java)|[数组/二分查找]注意边界|
 |LEETCODE-28 [Q](https://leetcode-cn.com/problems/implement-strstr/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/28.%20%E5%AE%9E%E7%8E%B0strStr().java)|[字符串/双指针]重点是i-j|
 |LEETCODE-27 [Q](https://leetcode-cn.com/problems/remove-element/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/27.%20%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.java)|[数组/双指针]法一很简单，法二交换再释放有点意思|
