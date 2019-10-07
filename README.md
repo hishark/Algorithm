@@ -12,6 +12,7 @@ A: Answer
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-67 [Q](https://leetcode-cn.com/problems/add-binary/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/67.%20二进制求和.java)|[数学/字符串]转数字做会溢出/字符串补全0之后再反向按位加|
 |LEETCODE-58 [Q](https://leetcode-cn.com/problems/length-of-last-word/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/58.%20%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6.java)|[字符串]split作弊/不作弊就乖乖从后往前遍历|
 |LEETCODE-38 [Q](https://leetcode-cn.com/problems/count-and-say/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/38.%20%E6%8A%A5%E6%95%B0.java)|[字符串]StringBuilder|
 |LEETCODE-35 [Q](https://leetcode-cn.com/problems/search-insert-position/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/35.%20%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.java)|[数组/二分查找]注意边界|
