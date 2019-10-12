@@ -1,3 +1,4 @@
+//暴力
 class Solution {
     public int maxSubArray(int[] nums) {
         int maxAns = nums[0];//结果
@@ -13,3 +14,6 @@ class Solution {
         return maxAns;
     }
 }
+
+//DP
+待做
