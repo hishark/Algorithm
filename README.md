@@ -8,7 +8,7 @@ A: Answer
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
-|LEETCODE-101 [Q](https://leetcode-cn.com/problems/symmetric-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.java)|[树/DFS/BFS]DFS造个树和自己比|
+|LEETCODE-101 [Q](https://leetcode-cn.com/problems/symmetric-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.java)|[树/DFS/BFS]造个树和自己比|
 |LEETCODE-100 [Q](https://leetcode-cn.com/problems/same-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/100.%20%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.java)|[树/DFS]简单的DFS，处理好根节点，然后左右孩子递归即可|
 |LEETCODE-67 [Q](https://leetcode-cn.com/problems/add-binary/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/67.%20二进制求和.java)|[数学/字符串]转数字做会溢出/字符串补全0之后再反向按位加|
 |LEETCODE-58 [Q](https://leetcode-cn.com/problems/length-of-last-word/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/58.%20%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6.java)|[字符串]split作弊/不作弊就乖乖从后往前遍历|
