@@ -16,4 +16,31 @@ class Solution {
 }
 
 //DP
-待做
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int len = nums.length;
+        if(len==0)
+            return 0;
+        
+        int[] dp = new int[len];//dp[i]表示到nums[i]为止的最大子序列和
+        dp[0] = nums[0];
+        
+        for(int i=1;i<len;i++){
+            if(dp[i-1]>=0){
+                dp[i] = dp[i-1] + nums[i];
+            }else{
+                dp[i] = nums[i];
+            }
+        }
+        
+        //找出最大的子序列和
+        int max = dp[0];
+        for(int i=1;i<len;i++){
+            if(dp[i] > max){
+                max = dp[i];
+            }
+        }
+        
+        return max;
+    }
+}
