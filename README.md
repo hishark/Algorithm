@@ -9,6 +9,8 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-104 [Q](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/104.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6.java)|[树/DFS]二叉树深度=Max(左右子树深度)+1|
+|LEETCODE-70 [Q](https://leetcode-cn.com/problems/climbing-stairs/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF.java)|[DP]关键点在“每次你可以爬 1 或 2 个台阶”|
 |LEETCODE-69 [Q](https://leetcode-cn.com/problems/sqrtx/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/69.%20x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9.java)|[数组/二分查找]不用long的话就变形防止溢出|
 |LEETCODE-53 [Q](https://leetcode-cn.com/problems/maximum-subarray/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C.java)|[数组/DP/分治]暴力一时爽一直暴力一直爽/DP重点是搞出状态转移方程/为啥要分治我就不分治|
 |LEETCODE-101 [Q](https://leetcode-cn.com/problems/symmetric-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.java)|[树/DFS/BFS]造个树和自己比|
