@@ -9,6 +9,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-168 [Q](https://leetcode-cn.com/problems/excel-sheet-column-title/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/168.%20Excel%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0.java)|[数学]简单进制问题|
 |LEETCODE-171 [Q](https://leetcode-cn.com/problems/excel-sheet-column-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/171.%20Excel%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7.java)|[数学]简单进制问题|
 |LEETCODE-169 [Q](https://leetcode-cn.com/problems/majority-element/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/169.%20求众数.java)|[数组/分治/哈希]分治关键是找到base case|
 |LEETCODE-121 [Q](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/121.%20%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.java)|[数组]|
