@@ -9,6 +9,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:| 
+|LEETCODE-175 [Q](https://leetcode-cn.com/problems/combine-two-tables/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/175.%20组合两个表.sql)|[SQL]left join|
 |LEETCODE-168 [Q](https://leetcode-cn.com/problems/excel-sheet-column-title/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/168.%20Excel%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0.java)|[数学]简单进制问题|
 |LEETCODE-171 [Q](https://leetcode-cn.com/problems/excel-sheet-column-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/171.%20Excel%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7.java)|[数学]简单进制问题|
 |LEETCODE-169 [Q](https://leetcode-cn.com/problems/majority-element/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/169.%20求众数.java)|[数组/分治/哈希]分治关键是找到base case|
