@@ -9,6 +9,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|LEETCODE-231 [Q](https://leetcode-cn.com/problems/power-of-two/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/231.%202%E7%9A%84%E5%B9%82.java)|[数学/位运算]&|
 |LEETCODE-203 [Q](https://leetcode-cn.com/problems/remove-linked-list-elements/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/203.%20%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.java)|[链表]头结点单独考虑|
 |LEETCODE-189 [Q](https://leetcode-cn.com/problems/rotate-array/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/189.%20%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84.java)|[数组]反转|
 |LEETCODE-202 [Q](https://leetcode-cn.com/problems/happy-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/202.%20%E5%BF%AB%E4%B9%90%E6%95%B0.java)|[数学/哈希表]巧妙运用HashSet|
@@ -18,7 +19,7 @@ TAG取自Leetcode相关标签
 |LEETCODE-169 [Q](https://leetcode-cn.com/problems/majority-element/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/169.%20求众数.java)|[数组/分治/哈希]分治关键是找到base case|
 |LEETCODE-121 [Q](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/121.%20%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.java)|[数组]|
 |LEETCODE-125 [Q](https://leetcode-cn.com/problems/valid-palindrome/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/125.%20%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E4%B8%B2.java)|[双指针/字符串]|
-|LEETCODE-136 [Q](https://leetcode-cn.com/problems/single-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/136.%20%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97.java)|[哈希表/位运算]位运算厉害喔，想不到|
+|LEETCODE-136 [Q](https://leetcode-cn.com/problems/single-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/136.%20%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97.java)|[哈希表/位运算]^|
 |LEETCODE-119 [Q](https://leetcode-cn.com/problems/pascals-triangle-ii/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/119.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%20II.java)|[数组]杨辉三角|
 |LEETCODE-118 [Q](https://leetcode-cn.com/problems/pascals-triangle/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/118.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.java)|[数组]杨辉三角|
 |LEETCODE-112 [Q](https://leetcode-cn.com/problems/path-sum/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/112.%20%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.java)|[树/DFS]用减法而不是加法|
