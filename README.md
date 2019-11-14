@@ -9,6 +9,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|LEETCODE-234 [Q](https://leetcode-cn.com/problems/palindrome-linked-list/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/234.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.java)|[链表/双指针]|
 |LEETCODE-231 [Q](https://leetcode-cn.com/problems/power-of-two/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/231.%202%E7%9A%84%E5%B9%82.java)|[数学/位运算]&|
 |LEETCODE-203 [Q](https://leetcode-cn.com/problems/remove-linked-list-elements/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/203.%20%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0.java)|[链表]头结点单独考虑|
 |LEETCODE-189 [Q](https://leetcode-cn.com/problems/rotate-array/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/189.%20%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84.java)|[数组]反转|
