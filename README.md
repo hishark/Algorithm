@@ -9,6 +9,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|LEETCODE-183 [Q](https://leetcode-cn.com/problems/customers-who-never-order/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/183.%20%E4%BB%8E%E4%B8%8D%E8%AE%A2%E8%B4%AD%E7%9A%84%E5%AE%A2%E6%88%B7.sql)|[SQL]not in|
 |LEETCODE-206 [Q](https://leetcode-cn.com/problems/reverse-linked-list/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/206.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.java)|[链表]反转逻辑画个图就清晰了|
 |LEETCODE-234 [Q](https://leetcode-cn.com/problems/palindrome-linked-list/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/234.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.java)|[链表/双指针]链表找中点使用快慢指针，反转对比即可|
 |LEETCODE-231 [Q](https://leetcode-cn.com/problems/power-of-two/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/231.%202%E7%9A%84%E5%B9%82.java)|[数学/位运算]&|
