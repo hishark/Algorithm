@@ -11,6 +11,8 @@ TAG取自Leetcode相关标签
 <img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10">中等
 <img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(2).png" width="10">困难
 
+我估摸我这表格里近期是不会出现黄灯红灯的_(:τ」∠)_
+
 | 题号 | 注意点 |  
 | :----:|:----:|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-108 [Q](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/108.%20%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.java)|[树/DFS/二分法]left+(right-left)/2|
