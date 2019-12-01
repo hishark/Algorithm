@@ -15,6 +15,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-171 [Q](https://leetcode-cn.com/problems/factorial-trailing-zeroes/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/172.%20%E9%98%B6%E4%B9%98%E5%90%8E%E7%9A%84%E9%9B%B6.java)|[数学]**阶乘后的零**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-122 [Q](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/122.%20%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II.java)|[数组/贪心]**买卖股票的最佳时机 II**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-111 [Q](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/111.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.java)|[树/DFS/BFS]**二叉树的最小深度**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-110 [Q](https://leetcode-cn.com/problems/balanced-binary-tree/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/110.%20%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.java)|[树/DFS]**平衡二叉树** 树的高度老忘记+1|
