@@ -56,6 +56,10 @@ TAG取自Leetcode相关标签
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-20 [Q](https://leetcode-cn.com/problems/valid-parentheses/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.java)|[栈/字符串]递归结构的问题用栈解决方便的一批|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-13 [Q](https://leetcode-cn.com/problems/roman-to-integer/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/13.%20罗马数字转整数.java)|[数学/字符串]HashMap|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-9 [Q](https://leetcode-cn.com/problems/palindrome-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/9.%20%E5%9B%9E%E6%96%87%E6%95%B0.java)|[数学]倒转数字比较即可（不转换为字符串🙅‍♀️）|
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-1 [Q](https://leetcode-cn.com/problems/two-sum/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1.%20两数之和.java) |暴力一时爽 还是用哈希表吧|
+
+| 题号 | 注意点 |  
+| :----:|:----:|
 |PATA1042|[模拟]取模问题| 
 |PATA1046|[模拟]数组预处理|
 |PATA1065|[模拟][溢出](https://coolshell.cn/articles/11466.html)|
@@ -100,7 +104,5 @@ TAG取自Leetcode相关标签
 |PATA0163|[stl-set]统计数量的时候，很多情况下可以置初值为max，然后碰到不符合条件的就减一</br>printf("%.1f%")可输出百分比，如果要紧跟一个百分号的话再自己加一个%</br>st.find(value)!=st.end()为true就表示在st中找到了value|
 |PATA1054|[stl-map]善用find()，贼方便|
 |PATA1071|[stl-map]千万不要用cin输入string，因为输入有空格，要用getline(cin,string)啦|
-|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-1 [Q](https://leetcode-cn.com/problems/two-sum/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1.%20两数之和.java) |暴力一时爽 还是用哈希表吧|
 |PATA1052|[链表]静态链表/第三个参数注意别写成next了，已经排好序了所以直接输出下一个结点的address即可/记得特判|
-|ReHeLu|int转string 用stringstream|
 |PATA1103|[DFS]感觉最重要的一步还是预处理，以及字典序的要求可以直接靠从最大值开始遍历来解决|
