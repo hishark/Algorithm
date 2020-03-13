@@ -11,8 +11,6 @@ TAG取自Leetcode相关标签
 <img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10">中等
 <img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(2).png" width="10">困难
 
-我估摸我这表格里近期是不会出现黄灯红灯的_(:τ」∠)_
-
 | 题号 | 注意点 |  
 | :----:|:----:|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-1071 [Q](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1071.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%A4%A7%E5%85%AC%E5%9B%A0%E5%AD%90.java)|[字符串]**字符串的最大公因子** GCD|
