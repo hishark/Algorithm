@@ -13,6 +13,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> 面试题 01.06. 字符串压缩 [Q](https://leetcode-cn.com/problems/compress-string-lcci/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.06.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8E%8B%E7%BC%A9.java)|[字符串]**字符串压缩**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-1071 [Q](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1071.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%A4%A7%E5%85%AC%E5%9B%A0%E5%AD%90.java)|[字符串]**字符串的最大公因子** GCD|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-1013 [Q](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1013.%20%E5%B0%86%E6%95%B0%E7%BB%84%E5%88%86%E6%88%90%E5%92%8C%E7%9B%B8%E7%AD%89%E7%9A%84%E4%B8%89%E4%B8%AA%E9%83%A8%E5%88%86.java)|[数组]**将数组分成和相等的三部分** |
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-695 [Q](https://leetcode-cn.com/problems/max-area-of-island/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/695.%20%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.java)|[DFS]**岛屿的最大面积**|
