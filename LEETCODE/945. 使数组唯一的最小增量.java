@@ -1,6 +1,7 @@
 //关键是要先排好序
 //https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/solution/ji-shu-onxian-xing-tan-ce-fa-onpai-xu-onlogn-yi-ya/
 //这方法也太好嘞
+//甜姨牛批👍
 class Solution {
     public int minIncrementForUnique(int[] A) {
         //先排好序(*)
