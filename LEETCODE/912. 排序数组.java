@@ -1,4 +1,5 @@
 //快速排序
+//https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F#Java
 class Solution {
     public int[] sortArray(int[] nums) {
         quickSort(nums, 0, nums.length-1);
