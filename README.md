@@ -13,6 +13,7 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-289 [Q]() [A]()|[数组]**生命游戏**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> Interview-62 [Q](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/%E9%9D%A2%E8%AF%95%E9%A2%9862.%20%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97.java)|[数学]**圆圈中最后剩下的数字**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> Interview-01.06 [Q](https://leetcode-cn.com/problems/compress-string-lcci/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.06.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8E%8B%E7%BC%A9.java)|[字符串]**字符串压缩**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-1162 [Q](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1162.%20%E5%9C%B0%E5%9B%BE%E5%88%86%E6%9E%90.java)|[图/BFS]**地图分析**|
