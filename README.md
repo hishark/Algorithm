@@ -13,10 +13,6 @@ TAG取自Leetcode相关标签
 
 | 题号 | 注意点 |  
 | :----:|:----:|
-
-|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-8 [Q](https://leetcode-cn.com/problems/string-to-integer-atoi/) [A]()|[]**字符串转换整数 (atoi)**|
-
-
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> Interview-62 [Q](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/%E9%9D%A2%E8%AF%95%E9%A2%9862.%20%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97.java)|[数学]**圆圈中最后剩下的数字**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> Interview-01.06 [Q](https://leetcode-cn.com/problems/compress-string-lcci/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.06.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8E%8B%E7%BC%A9.java)|[字符串]**字符串压缩**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-1162 [Q](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/1162.%20%E5%9C%B0%E5%9B%BE%E5%88%86%E6%9E%90.java)|[图/BFS]**地图分析**|
@@ -34,7 +30,8 @@ TAG取自Leetcode相关标签
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-409 [Q](https://leetcode-cn.com/problems/longest-palindrome/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/409.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2.java)|[哈希表]**最长回文串**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-322 [Q](https://leetcode-cn.com/problems/coin-change/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/322.%20%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.java)|[DP]**零钱兑换**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-300 [Q](https://leetcode-cn.com/problems/longest-increasing-subsequence/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/300.%20%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.java)|[DP]**最长上升子序列**|
-
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2%20(1).png" width="10"> LeetCode-289 [Q](https://leetcode-cn.com/problems/game-of-life/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/289.%20%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F.java)|[数组]**生命游戏**|
+|<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-263 [Q](https://leetcode-cn.com/problems/ugly-number/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/263.%20%E4%B8%91%E6%95%B0.java)|[数学]**丑数**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-258 [Q](https://leetcode-cn.com/problems/add-digits/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/258.%20%E5%90%84%E4%BD%8D%E7%9B%B8%E5%8A%A0.java)|[数学]**各位相加**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-256 [Q](https://leetcode-cn.com/problems/paint-house/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/256_%E7%B2%89%E5%88%B7%E6%88%BF%E5%AD%90.js)|[DP]**粉刷房子**|
 |<img src="https://raw.githubusercontent.com/hishark/PicRepo/master/img/%E5%9C%86%E5%BD%A2.png" width="10"> LeetCode-234 [Q](https://leetcode-cn.com/problems/palindrome-linked-list/) [A](https://github.com/hishark/Algorithm/blob/master/LEETCODE/234.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.java)|[链表/双指针]链表找中点使用快慢指针，反转对比即可|
