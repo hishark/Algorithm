@@ -3,7 +3,8 @@
 class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
-        // 先以对角线（左上-右下）为轴进行翻转
+        //翻转左下和右上
+        //n-1行就已经翻转完了所有的数字
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 int tmp = matrix[i][j];
@@ -11,8 +12,9 @@ class Solution {
                 matrix[j][i] = tmp;
             }
         }
-        // 再对每一行以中点进行翻转
-        int mid = n >> 1;
+        // 中心翻转
+        // 甜姐这里写的是 n >> 1
+        int mid = n / 2;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < mid; j++) {
                 int tmp = matrix[i][j];
