@@ -1,3 +1,4 @@
+//Medium
 //⬇暴力
 class Solution {
     public int maxArea(int[] height) {

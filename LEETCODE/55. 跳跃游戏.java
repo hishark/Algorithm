@@ -1,3 +1,4 @@
+//Medium
 public class Solution {
     public boolean canJump(int[] nums) {
         int rightBorder = 0;

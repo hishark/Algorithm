@@ -1,3 +1,4 @@
+--Easy
 select Email from
 (select Email, count(Email) as cnt 
 from Person

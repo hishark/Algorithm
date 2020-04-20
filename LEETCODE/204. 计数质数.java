@@ -1,3 +1,4 @@
+//Easy
 class Solution {
     public int countPrimes(int n) {
         boolean[] isPrim = new boolean[n];

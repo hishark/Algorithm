@@ -3,6 +3,8 @@
  * https://leetcode-cn.com/problems/01-matrix/solution/java-jian-dan-de-bfs-by-kelly2018/
  * 
  * BFS
+ * 
+ * Medium
  */
 class Solution {
     public int[][] updateMatrix(int[][] matrix) {

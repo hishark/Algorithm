@@ -1,3 +1,4 @@
+//Medium
 class Solution {
     public int[][] merge(int[][] intervals) {
         //结果列表
