@@ -13,7 +13,7 @@ class Solution {
     }
 }
 
-class Solution {
+class Solution { 
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
 
