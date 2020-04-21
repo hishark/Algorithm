@@ -1,5 +1,6 @@
 2020-04-21
 停更，转至[语雀](https://www.yuque.com/xiaoqizhang/leetcode/)继续记录。
+欢迎互fo一起刷题嘿嘿👉[LeetCode](https://leetcode-cn.com/u/hishark/)
 ---
 好好吃饭好好刷题🍚
 
