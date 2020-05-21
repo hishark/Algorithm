@@ -3,7 +3,7 @@ class Solution {
         int max = nums[0];
         for(int i=0;i<nums.length;i++) {
             int res = nums[i];
-            // 数组长度为1的情况，别漏了
+            // 数组长度为1的情况别漏了
             if(res>max){
                 max = res;
             }
