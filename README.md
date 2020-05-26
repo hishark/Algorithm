@@ -1,6 +1,6 @@
 2020-04-21 
 
-停更，转至[语雀](https://www.yuque.com/xiaoqizhang/leetcode/)继续记录。
+停更，转至[Notion](https://www.notion.so/xiaoqizhang/fe315a4d768b45a5bd4ece343ec79217?v=f282e840d4064c70984e4d454ed00a59)继续记录。
 
 欢迎互fo一起刷题嘿嘿👉[LeetCode](https://leetcode-cn.com/u/hishark/)
 
