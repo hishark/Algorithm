@@ -20,3 +20,27 @@ class Solution {
     }
 }
 //快慢指针
+class Solution {
+    fun isHappy(n: Int): Boolean {
+        var slow = getNewN(n)
+        var fast = getNewN(getNewN(n))
+
+        while(fast!=1 && fast!=slow){
+            slow = getNewN(slow)
+            fast = getNewN(getNewN(fast))
+            if(slow == fast)
+                return false
+        }
+        return fast == 1
+    }
+
+    fun getNewN(n: Int): Int {
+        var newN = 0
+        var orgN = n
+        while(orgN!=0) {
+            newN += (orgN%10) * (orgN%10)
+            orgN /= 10
+        }
+        return newN;
+    }
+}
