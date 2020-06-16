@@ -9,10 +9,10 @@ class Solution {
     fun reverseLeftWords(s: String, n: Int): String {
         var res = ""
         for(i in n..s.length-1) {
-            res += s.charAt(i)
+            res += s[i]
         }
         for(i in 0..n-1) {
-            res += s.charAt(i)
+            res += s[i]
         }
         return res
     }
