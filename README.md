@@ -1,11 +1,3 @@
-2020-06-10 
-
-停更，转至[BLOG](https://xiaoqizhang.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/)继续记录。
-
-欢迎互fo一起刷题嘿嘿👉[LeetCode](https://leetcode-cn.com/u/hishark/)
-
----
-
 好好吃饭好好刷题🍚
 
 Q: Question
