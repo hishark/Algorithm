@@ -7,19 +7,29 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-//二分法 递归
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
-        return recursion(nums, 0, nums.length-1);
+        return dfs(nums, 0, nums.length - 1);
     }
     
-    public TreeNode recursion(int[] nums, int begin, int end){
-        if(begin>end)
+    public TreeNode dfs(int[] nums, int left, int right) {
+        // 如果左大于右，返回null
+        if (left>right)
             return null;
-        int mid = begin + (end - begin)/2;
+        
+        // 找中点
+        int mid = left + (right - left) / 2;
+        
+        // 中点位置的元素作为根结点
         TreeNode root = new TreeNode(nums[mid]);
-        root.left = recursion(nums, begin, mid-1);
-        root.right = recursion(nums, mid+1, end);
+        
+        // 递归构建左子树
+        root.left = dfs(nums, left, mid - 1);
+        
+        // 递归构建右子树
+        root.right = dfs(nums, mid + 1, right);
+
+        // 返回根结点
         return root;
     }
 }
