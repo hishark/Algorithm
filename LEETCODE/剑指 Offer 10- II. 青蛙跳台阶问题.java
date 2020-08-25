@@ -1,6 +1,6 @@
+// dp
 class Solution {
     public int numWays(int n) {
-        // dp
         // 状态数组
         int[] dp = new int[n+1];
         
