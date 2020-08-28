@@ -43,3 +43,28 @@ class Solution {
         return dp[n];
     }
 }
+
+// 贪心
+class Solution {
+    public int cuttingRope(int n) {
+        // 边界值
+        if (n < 2)
+            return 0;
+        else if (n == 2)
+            return 1;
+        else if (n == 3)
+            return 2;
+
+        // 尽可能多地剪去长度为3的绳子段
+        int timesOf3 = n / 3;
+
+        // 当绳子最后剩下的长度为4的时候，不能再剪去长度为3的绳子段
+        // 此时更好的方法是把绳子剪成长度为2的两段，因为2x2>3x1
+        if (n - timesOf3 * 3 == 1)
+            timesOf3 -= 1;
+
+        int timesOf2 = (n - timesOf3 * 3) / 2;
+
+        return (int)(Math.pow(3, timesOf3) * Math.pow(2, timesOf2));
+    }
+}
