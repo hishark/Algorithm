@@ -1,4 +1,5 @@
-// ref: lcof
+// ref: 1. lcof
+//      2. https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/zi-jie-ti-ku-jian-14-i-zhong-deng-jian-sheng-zi-1s/
 // dp
 class Solution {
     public int cuttingRope(int n) {
