@@ -1,14 +1,14 @@
 class Solution {
     public int[] printNumbers(int n) {
         int max = 0;
-        while (n != 0) {
+        while (n != 0){
             max = max * 10 + 9;
             n--;
         }
-        int[] ans = new int[max];
-        for (int i=1;i<=max;i++) {
-            ans[i-1] = i;
+        int[] res = new int[max];
+        for (int i=0;i<max;i++) {
+            res[i] = i+1;
         }
-        return ans;
+        return res;
     }
 }
