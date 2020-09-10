@@ -1,42 +1,44 @@
 // 分治算法 递归
 class Solution {
-    public double myPow(double x, int n) {
+    fun myPow(x: Double, n: Int): Double {
         /**
          * 求 x ^ n
          * n 的范围是 [−2^31, 2^31 − 1] 即 int 的范围
          * 但是 -n 操作会导致越界，所以需要将 n 转换成 long 类型来计算
          */
-        long N = n;
-        
+        val N = n.toLong()
+
         // 下面3个N别不小心写成n啦
-        if (N < 0) {
-            return 1 / myPow(x, -N);
-        }
-        return myPow(x, N);
+        return if (N < 0) {
+            1 / myPow(x, -N)
+        } else myPow(x, N)
     }
 
-    public double myPow(double x, long n) {
+    fun myPow(x: Double, n: Long): Double {
         // 边界处理
-        if (n == 0)
-            return 1;
+        if (n == 0L)
+            return 1.0
 
-        if (x == 1)
-            return 1;
+        if (x == 1.0)
+            return 1.0
 
         // 奇偶次幂分别处理
         // 偶次幂
-        if (n % 2 == 0) {
-            double square = myPow(x, n / 2);
-            return  square * square;
-        } else {
-            // 奇次幂
-            double square = myPow(x, (n - 1) / 2);
-            return square * square * x;
+        if (n % 2 == 0L) {
+            // 分治 - 分
+            val square = myPow(x, n / 2)
+            // 分治 - 合
+            return square * square
+        } else { // 奇次幂
+            // 分治 - 分
+            val square = myPow(x, (n - 1) / 2)
+            // 分治 - 合
+            return square * square * x
         }
     }
 }
 
-// 非递归，快速幂方法
+// 快速幂
 class Solution {
     public double myPow(double x, int n) {
         /**
@@ -71,25 +73,5 @@ class Solution {
             N /= 2;
         }
         return ans;
-    }
-}
-
-// 智障方法超时了兄弟
-class Solution {
-    public double myPow(double x, int n) {
-        if (n == 0)
-            return 1;
-        if (x == 1)
-            return 1;
-            
-        double res = x;
-        int preN = n;
-        if (n < 0)
-            n = -n;
-        while (n != 1) {
-            res *= x;
-            n--;
-        }
-        return preN < 0 ? 1/res : res;
     }
 }
