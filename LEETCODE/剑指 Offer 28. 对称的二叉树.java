@@ -7,6 +7,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+// ref: https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/solution/mian-shi-ti-28-dui-cheng-de-er-cha-shu-di-gui-qing/
 class Solution {
     public boolean isSymmetric(TreeNode root) {
         // 空树显然对称
@@ -18,13 +20,17 @@ class Solution {
 
     // 检查L和R是否对称
     public boolean recursion(TreeNode L, TreeNode R) {
-        // 空，对称
+        // L和R同时越过叶子结点，为空，则该树从顶到底都对称，返回true
         if (L == null && R == null)
             return true;
-        // 根不同，不对称
-        if (L == null || R == null || L.val != R.val)
+        
+        // 1. L和R只有一个越过叶子结点
+        // 2. L的值和R的值不相等
+        // 这两种情况下明显树不对称，返回false
+        if ((L == null || R == null) || L.val != R.val)
             return false;
-        // 若L的left和R的right相同，L的right和R的left相同，说明此树对称
+        
+        // 判断L的left和R的right是否对称，L的right和R的left是否对称
         return recursion(L.left, R.right) && recursion(L.right, R.left);
     }
 }
