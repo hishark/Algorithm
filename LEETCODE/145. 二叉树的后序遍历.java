@@ -1,3 +1,6 @@
+// ref: https://leetcode-cn.com/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/
+// 中等（？应该放简单吧
+// 递归 
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,8 +16,6 @@
  *     }
  * }
  */
-// ref: https://leetcode-cn.com/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/
-// 递归 
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<Integer>();
@@ -45,3 +46,52 @@ class Solution {
 
 
 // 迭代
+// 和递归的方法其实是等价的，区别在于递归的时候隐式地维护了一个栈，而在迭代的时候需要显式的模拟一个栈
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<Integer>();
+        
+        // 判空
+        if (root == null)
+            return ans;
+        
+        // 双向队列
+        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+        TreeNode pre = null;
+
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
+                stack.push(root);
+                // 一直往左搜索
+                root = root.left;
+            }
+
+            // 搜索到了最左边，拿出一个结点
+            root = stack.pop();
+
+            if (root.right == null || root.right == pre) {
+                ans.add(root.val);
+                pre = root;
+                root = null;
+            } else { 
+                stack.push(root);
+                root = root.right;
+            }
+        }        
+    }
+}
