@@ -44,6 +44,7 @@ class Solution {
  * 空间复杂度：O(n)。空间占用主要来自于递归过程中栈的开销，平均情况下为O(logn)，最坏情况下树为链状，空间复杂度为O(n)。
  */
 
+ 
 
 // 迭代
 // 和递归的方法其实是等价的，区别在于递归的时候隐式地维护了一个栈，而在迭代的时候需要显式的模拟一个栈
@@ -84,6 +85,7 @@ class Solution {
             // 搜索到了最左边，拿出一个结点
             root = stack.pop();
 
+            // 查看此结点的
             if (root.right == null || root.right == pre) {
                 ans.add(root.val);
                 pre = root;
@@ -92,6 +94,13 @@ class Solution {
                 stack.push(root);
                 root = root.right;
             }
-        }        
+        }
+
+        return ans;
     }
 }
+
+/**
+ * 时间复杂度：O(n)，其中 n 是二叉树的结点数，每一个结点正好会被遍历一次。
+ * 空间复杂度：O(n)，迭代的过程中显式栈会产生空间开销，平均情况下为 O(logn)，最坏情况下树为链状，此时复杂度为O(n)。
+ */
