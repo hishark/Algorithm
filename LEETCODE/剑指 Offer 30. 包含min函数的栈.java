@@ -22,7 +22,7 @@ class MinStack {
     public void pop() {
         // 如果A的栈顶元素和B的栈顶元素（即当前的最小数）一致，那么A和B一起pop
         // 如果不一致，只要pop栈A中的栈顶元素即可，因为最小数此时没有发生改变
-        //  注意：这里要用 equals 不能用 == 哦 【？】
+        //  注意：这里要用「equals」不能用「==」，仅当整数值处于[-128,127]之间可以使用「==」比较
         if (stackA.pop().equals(stackB.peek()))
             stackB.pop();
     }
