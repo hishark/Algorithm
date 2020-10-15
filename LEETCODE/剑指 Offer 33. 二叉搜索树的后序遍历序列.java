@@ -1,6 +1,6 @@
 class Solution {
     public boolean verifyPostorder(int[] postorder) {
-        recursion(postorder, i, j);
+        return recursion(postorder, 0, postorder.length - 1);
     }
 
     // 判断后序遍历 postorder[i, j] 是否满足二叉搜索树的定义
