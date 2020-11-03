@@ -59,3 +59,24 @@ class Solution {
         return majorityElementRec(nums, 0, nums.length-1);
     }
 }
+
+// 摩尔投票法
+class Solution {
+    public int majorityElement(int[] nums) {
+        // 摩尔投票法
+        int mode = 0;
+        int votes = 0;
+
+        for (int num: nums) {
+            if (votes == 0)
+                mode = num;
+
+            if (num == mode)
+                votes += 1;
+            else 
+                votes -= 1;
+        }
+
+        return mode;
+    }
+}
