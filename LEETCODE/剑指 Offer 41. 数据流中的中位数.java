@@ -12,11 +12,11 @@ class MedianFinder {
         // maxHeap 为大顶堆，需要重写 Comparator。用于保存较小的一半数字
         maxHeap = new PriorityQueue<>((x, y) -> (y - x));
         // 重写 Comparator 完整的写法：
-        // maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
-        //     public int compare(Integer x, Integer y) {
-        //         return y - x;
-        //     }
-        // });
+        maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
+            public int compare(Integer x, Integer y) {
+                return y - x;
+            }
+        });
     }
     
     public void addNum(int num) {
@@ -33,7 +33,7 @@ class MedianFinder {
     public double findMedian() {
         // 如果两个堆的大小相等，就取出两个堆的堆顶元素求平均值
         if (maxHeap.size() == minHeap.size()) 
-            return (maxHeap.poll() + minHeap.poll()) * 0.5;
+            return (maxHeap.peek() + minHeap.peek()) * 0.5;
         // 若两个堆的大小不相等，直接取出最大堆的堆顶元素即可
         return maxHeap.peek();
     }
