@@ -18,21 +18,28 @@ class Solution {
             deque.offerLast(digit);
         }
         
-        // 
+        // 删除最大的 k 位数字
         for (int i = 0; i < k; ++i) {
             deque.pollLast();
         }
         
-        StringBuilder ret = new StringBuilder();
+        // 开始拼接出最小的数字
+        StringBuilder ans = new StringBuilder();
+        // 假设存在前导 0 
         boolean leadingZero = true;
         while (!deque.isEmpty()) {
+            // 队首数字
             char digit = deque.pollFirst();
+            // 如果存在前导 0 且当前数字为 0，就删去前导 0 
             if (leadingZero && digit == '0') {
                 continue;
             }
+            // 更新前导 0 的存在状态
             leadingZero = false;
-            ret.append(digit);
+            // 拼接结果
+            ans.append(digit);
         }
-        return ret.length() == 0 ? "0" : ret.toString();
+        // 如果结果串长度为 0 说明数字删光了
+        return ans.length() == 0 ? "0" : ans.toString();
     }
 }
