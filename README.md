@@ -3,7 +3,7 @@
 <!-- >[LeetCode算法笔记戳这里](https://hishark777.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/) -->
 <!-- ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/algorithm.jpg) -->
 >以下停更-。-
-可以在[Android Interview - 数据结构与算法](https://hishark777.gitbook.io/777-interview-notes/)内方便的浏览算法笔记~
+可以在[777 Interview Notes - 数据结构与算法](https://hishark777.gitbook.io/777-interview-notes/)内方便的浏览算法笔记~
 
 Q: Question
 
