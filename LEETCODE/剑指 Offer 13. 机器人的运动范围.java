@@ -15,6 +15,7 @@
  * https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/ji-qi-ren-de-yun-dong-fan-wei-by-leetcode-solution/
  * https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/
  */
+// dfs
 class Solution {
     public int movingCount(int m, int n, int k) {
         boolean[][] visited = new boolean[m][n];
@@ -48,3 +49,49 @@ class Solution {
     }
 }
 
+// bfs
+class Solution {
+    public int movingCount(int m, int n, int k) {
+        // 访问矩阵
+        boolean[][] visited = new boolean[m][n];
+        // 结果
+        int ans = 0;
+        // 利用队列实现广度优先遍历
+        Queue<int[]> queue= new LinkedList<int[]>();
+        // 将机器人初始点 (0,0) 加入队列 queue
+        // 四个数字分别代表：横坐标索引值，纵坐标索引值，数位之和
+        queue.add(new int[] { 0, 0, 0 });
+        // 终止条件：queue为空，说明已经遍历完所有可达解
+        while(queue.size() > 0) {
+            // 单元格出列，作为当前搜索的单元格
+            int[] cur = queue.poll();
+            // 得到该单元格的索引和数位之和
+            int i = cur[0], j = cur[1], sum = cur[2];
+            // 如果越界、不合法、已访问的话就跳过
+            if(i >= m || j >= n || sum > k || visited[i][j]) 
+                continue;
+            // 标记当前单元格已被访问
+            visited[i][j] = true;
+            // 结果++
+            ans++;
+            // 把当前元素下方和右方的单元格加入队列
+            // 下方单元格：横坐标索引，纵坐标索引，数位之和
+            queue.add(new int[]{i, j+1, digitCount(i, j+1)});
+            // 右方单元格：横坐标索引，纵坐标索引，数位之和
+            queue.add(new int[]{i+1, j, digitCount(i+1, j)});
+        }
+        return ans;
+    }
+
+    // 计算x和y的数位之和
+    public int digitCount(int x, int y) {
+        int sum = 0;
+        while (x != 0 || y != 0 ) {
+            sum += x%10;
+            x /= 10;
+            sum += y%10;
+            y /= 10;
+        }
+        return sum;
+    }
+}

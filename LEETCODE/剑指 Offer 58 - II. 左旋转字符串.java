@@ -7,6 +7,12 @@ class Solution {
         for (int i = 0; i < n; i++) {
             ans += s.charAt(i);
         }
+
+        // 还可以用求余简化两个循环
+        // for(int i = n; i < n + s.length(); i++)
+        //     ans += s.charAt(i % s.length());
+
+
         return ans;
     }
 }

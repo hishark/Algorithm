@@ -23,7 +23,7 @@ class Solution {
             return 0;
         }
 
-        //判断正负
+        //判断是否为负数
         boolean isNeg = false;
         if(ch[index]=='-'){
             isNeg = true;
@@ -32,17 +32,24 @@ class Solution {
             index++;
         }
 
+        // 最终结果
         int res = 0;
+
         //当字符为数字时进行累加
         while(index<length && isNum(ch[index])){
             int num = ch[index] - '0';
+            // 为了防止越界，将 res * 10 + num > Integer.MAX_VALUE 不等式移动了一下
+            // 如果已经比最大值还要大了，就看是负数还是正数
+            // 负数返回Integer.MIN_VALUE，正数返回Integer.MAX_VALUE
             if(res > (Integer.MAX_VALUE - num) / 10){
                 return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }
+            // 累加
             res = res*10+num;
+            // 索引右移
             index++;
         }
-
+        // 返回结果
         return isNeg ? -res : res;
     }
 

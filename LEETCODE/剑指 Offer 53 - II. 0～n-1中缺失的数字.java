@@ -28,7 +28,28 @@ class Solution {
                 right = mid - 1;
             }
         }
-        // 返回 left 和 right 都可以，退出上面的循环之后他俩是相同的！
+        // 跳出循环时，left 和 right 分别指向 “右子数组的首位元素” 和 “左子数组的末位元素” 
+        // 返回 left 即可
         return left;
+    }
+}
+
+// 位运算 - 异或
+class Solution {
+    public int missingNumber(int[] nums) {
+        // 数组长度
+        int n = nums.length;
+        // 由于缺了一个数字，所以数组中一定会出现 n 这个数
+        // 先设缺失的数字为 n
+        int miss = n;
+
+        for(int i=0;i<n;i++) {
+            // 异或：a^a=0,a^0=a
+            // i ^ nums[i]: 未缺失的数字和它对应的下标先全部抵消掉
+            // miss设为n就是为了和n抵消
+            // 最后只剩下了一个下标，就是缺失的那个数字的下标，即缺失的数字（缺失的数字本身和它的下标是一样的！）
+            miss ^= (i ^ nums[i]);
+        }
+        return miss;
     }
 }

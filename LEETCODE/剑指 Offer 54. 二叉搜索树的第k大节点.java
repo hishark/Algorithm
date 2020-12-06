@@ -8,10 +8,10 @@
  * }
  */
 class Solution {
-    int ans, kk;
+    int ans, K;
     public int kthLargest(TreeNode root, int k) {
-        // kk作为全局变量使用
-        kk = k;
+        // K作为全局变量使用
+        K = k;
         // 对二叉搜索树进行中序遍历
         dfs(root);
         // 返回结果
@@ -26,13 +26,11 @@ class Solution {
         // 右
         dfs(root.right);
 
-        // 找到了第k大的元素，记录下来
-        if (--kk == 0)
+        // 找到了第k大的元素，记录下来，返回即可
+        if (--K == 0) {
             ans = root.val;
-
-        // kk已经找到了，返回即可
-        if (kk == 0)
             return;
+        }
 
         // 左
         dfs(root.left);

@@ -1,7 +1,7 @@
 // ref: https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/solution/mian-shi-ti-58-i-fan-zhuan-dan-ci-shun-xu-shuang-z/
 class Solution {
     public String reverseWords(String s) {
-        // 首先，先去除字符串首位的空格
+        // 首先，先去除字符串头尾的空格
         s = s.trim();
 
         // 倒序遍历字符串，记录当前遍历单词的左右边界 left 和 right
