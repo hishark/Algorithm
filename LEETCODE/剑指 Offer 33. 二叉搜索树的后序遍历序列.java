@@ -40,3 +40,43 @@ class Solution {
         return p == j && recursion(postorder, i, m - 1) && recursion(postorder, m, j - 1);
     }
 }
+
+
+
+public class Solution {
+    public boolean verifyPostorder(int[] post) {
+        // 后序遍历：左右根
+        // 二叉搜索树
+        // 先找到根节点，然后找到第一个大于根的值，就可以分出左右子树了
+        return recur(post, 0, post.length - 1);
+    }
+    
+    // 判断是否符合BST的定义
+    public boolean recur(int[] post, int left, int right) {
+        // 边界判断
+        if (left >= right)
+            return true;
+        
+        // 根
+        int root = post[right];
+        // 工具人
+        int index = left;
+        
+        while(post[index] < root)
+            index++;
+        int max = index;
+        
+        // 左子树：[left, max-1]
+        // 右子树：[max, right-1]
+        // 接下来判断左右子树和根节点的大小
+        // 左子树的所有节点应该比根小【上面已经保证了】
+        // 右子树的所有节点应该比根大【只要判断这个了】
+        for(int i=max;i<right;i++) {
+            if (post[i] < root)
+                return false;
+        }
+        
+        return recur(post,left,max-1) && recur(post,max,right-1);
+        
+    }
+}

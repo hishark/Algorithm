@@ -11,6 +11,7 @@
   * 执行用时 :2 ms, 在所有 Java 提交中击败了100.00%的用户
     内存消耗 :39.8 MB, 在所有 Java 提交中击败了95.83%的用户
   */
+// 翻转相加
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
@@ -83,5 +84,53 @@ class Solution {
         } 
         
         return pre;
+    }
+}
+
+// 栈 - 这种做法非常完美
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        // 用栈来保存链表，从栈中取出来就是从低位访问到高位了
+        Stack<Integer> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
+        while (l1 != null) {
+            stack1.push(l1.val);
+            l1 = l1.next;
+        }
+        while (l2 != null) {
+            stack2.push(l2.val);
+            l2 = l2.next;
+        }
+        
+        // 进位
+        int carry = 0;
+        // 结果链表
+        ListNode head = null;
+        // 两个链表不为空且存在进位时
+        while (!stack1.isEmpty() || !stack2.isEmpty() || carry > 0) {
+            // 初始化sum为每一次的进位carry
+            int sum = carry;
+            // 取得栈中的数字相加即可
+            sum += stack1.isEmpty()? 0: stack1.pop();
+            sum += stack2.isEmpty()? 0: stack2.pop();
+            // 求出新的进位
+            carry = sum / 10;
+            // 当前位的和
+            ListNode node = new ListNode(sum % 10);
+            // 更新指针的指向
+            node.next = head;
+            head = node;
+            
+        }
+        return head;
+
     }
 }
