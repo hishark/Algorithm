@@ -23,8 +23,8 @@ class Solution {
                 while (stack.length() > 0 && stack.charAt(stack.length() - 1) > ch) {
                     // 如果后面还有关键字符，就可以放心让此时栈顶的关键字符出栈
                     if (num[stack.charAt(stack.length() - 1) - 'a'] > 0) {
-                        stack.deleteCharAt(stack.length() - 1);
                         inStack[stack.charAt(stack.length() - 1) - 'a'] = false;
+                        stack.deleteCharAt(stack.length() - 1);
                     } else {
                         // 如果后面没有关键字符了，就留下它
                         break;
