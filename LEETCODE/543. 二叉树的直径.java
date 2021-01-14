@@ -7,22 +7,32 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
- //需要遍历每一个结点来更新maxNodeNum（每一条路径经过的结点数中的最大值）
- class Solution {
+class Solution {
+    // 二叉树的直径
     int maxNodeNum;
+
     public int diameterOfBinaryTree(TreeNode root) {
-        maxNodeNum = 1;//开始的时候只有根结点，所以为1
-        depth(root);//遍历整棵树
-        return maxNodeNum - 1;//结点数-1就是路径长度啦
+        // 最开始的时候只有根结点，所以为1
+        maxNodeNum = 1;
+        // 深度优先搜索整棵树
+        dfs(root);
+        // 结点数减去 1 就是路径长度啦
+        return maxNodeNum - 1;
     }
 
-    public int depth(TreeNode root){
-        if(root==null){
+    // 求二叉树的直径
+    public int dfs(TreeNode root) {
+        // 判空
+        if (root == null) {
             return 0;
         }
-        int left = depth(root.left);
-        int right = depth(root.right);
+        // 左子树的直径
+        int left = dfs(root.left);
+        // 右子树的直径
+        int right = dfs(root.right);
+        // 更新当前的最大直径
         maxNodeNum = Math.max(maxNodeNum, left + right + 1);
+        // 当前树的直径即左右子树的较大者 + 1
         return Math.max(left, right) + 1;
     }
 }
