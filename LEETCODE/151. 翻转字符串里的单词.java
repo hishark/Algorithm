@@ -1,3 +1,4 @@
+// 调用内置函数
 class Solution {
     public String reverseWords(String s) {
         String[] str = s.trim().split(" ");
@@ -14,3 +15,4 @@ class Solution {
         return ans;
     }
 }
+
