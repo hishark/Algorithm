@@ -8,15 +8,23 @@ class Solution {
         int carry = 0;
         // 数字遍历完就结束循环
         while(i >= 0 || j >= 0){
-            // 取出两个字符串当前的数字
+            // 取出两个字符串当前的数字，转换为int类型用于相加
             int n1 = i >= 0 ? num1.charAt(i) - '0' : 0;
             int n2 = j >= 0 ? num2.charAt(j) - '0' : 0;
+            // 求和
             int tmp = n1 + n2 + carry;
+            // 计算进位
             carry = tmp / 10;
+            // 把当前位的结果加入到结果字符串中
             res.append(tmp % 10);
-            i--; j--;
+            // 继续计算上一位
+            i--;
+            j--;
         }
-        if(carry == 1) res.append(1);
+        // 结束循环后，检查一下是否存在进位，如果存在就加入到结果中
+        if(carry == 1) 
+            res.append(1);
+        // 最后反转结果字符串即可
         return res.reverse().toString();
     }
 }

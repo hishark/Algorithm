@@ -23,9 +23,26 @@ class Solution {
         }
         return -1;
     }
+
+    public int findRepeatNumber(int[] nums) {
+        Map<Integer, Integer> hashmap = new HashMap<>();
+        // 一边更新hashmap一边判断
+        for(int num: nums) {
+            int preCnt = hashmap.getOrDefault(num, 0);
+            if (preCnt != 0) {
+                return num;
+            }
+            hashmap.put(num, 1);
+        }
+        return -1;
+    }
 }
 
 // 法3 比较交换
+// 在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。
+// ⬆️ 看到这句话就应该意识到，如果没有重复的数字，每个数字都可以放在对应的位置上，比如 0 这个数字就放在 0 这个索引位置上
+// 那么，如果一个数字n发现在n位置上已经有一个n了，说明找到了重复的数字
+// 诶嘿这个解法我终于搞通了
 class Solution {
     public int findRepeatNumber(int[] nums) {
         // 从头到尾扫描数字
@@ -49,7 +66,7 @@ class Solution {
                 }
             }
         }
-        
         return -1;
     }
+
 }

@@ -8,6 +8,7 @@
  */
 
 // 简单粗暴无脑法，反转链表再输出
+// 别看这个智障解法
 class Solution {
     public int[] reversePrint(ListNode head) {
         int length = 0;
@@ -31,8 +32,10 @@ class Solution {
 }
 
 // 栈
+// 看到从尾到头四个字，就应该联想到先进后出，继而联想到栈
 class Solution {
     public int[] reversePrint(ListNode head) {
+        // 用自带的栈即可
         Stack<Integer> stack = new Stack<Integer>();
         int len = 0;
         while (head!=null) {

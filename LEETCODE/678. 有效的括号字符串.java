@@ -5,7 +5,7 @@ class Solution {
         // 字符串长度
         int n = s.length();
 
-        // 借助两个辅助栈
+        // 借助两个辅助栈 【切记是放下标进去不是放数字进去哦】
         // leftStack 存 '(' 所在位置的下标
         Stack<Integer> leftStack = new Stack<>();
         // starStack 存 '*' 所在位置的下标
