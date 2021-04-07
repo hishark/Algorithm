@@ -18,18 +18,21 @@
 // dfs
 class Solution {
     public int movingCount(int m, int n, int k) {
+        // 访问标记矩阵
         boolean[][] visited = new boolean[m][n];
+        // 深度优先搜索
         return dfs(m, n, 0, 0, k, visited);
 
     }
 
+    // 深度优先搜索，[i,j]是当前访问的格子
     public int dfs(int m, int n, int i, int j, int k, boolean[][] visited) {
         // 递归出口：越界，数位之和不合法，已访问
         if (i < 0 || i >= m || j < 0 || j >= n || digitCount(i, j) > k || visited[i][j]) 
             return 0;
 
         // 当前位置已访问
-        visited[i][j] = true;
+        visited[i][j] = true;// 为什么12题需要还原board？这里却不用？因为12题每次都是一次全新的匹配，这一题就是从[0,0]开始搜索一回
 
         // 解决子问题，返回当前问题的结果
         return 1 + dfs(m, n, i + 1, j, k, visited) +  dfs(m, n, i - 1, j, k, visited)

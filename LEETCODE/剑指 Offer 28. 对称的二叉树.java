@@ -33,4 +33,17 @@ class Solution {
         // 判断L的left和R的right是否对称，L的right和R的left是否对称
         return recursion(L.left, R.right) && recursion(L.right, R.left);
     }
+
+    public boolean recursion(TreeNode A, TreeNode B) {
+        if (A == null && B == null)
+            return true;
+        if (A == null || B == null)
+            return false;
+        if (A.val == B.val) {
+            return recur(A.left, B.right) && recur(A.right, B.left);
+        }
+        return false;
+    }
 }
+
+//cnt: 1

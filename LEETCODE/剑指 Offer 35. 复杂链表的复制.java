@@ -40,3 +40,4 @@ class Solution {
         return map.get(head);
     }
 }
+// read: 0

@@ -6,6 +6,8 @@ class Solution {
         // 遍历所有字符，找到为止，没找到就返回false
         for(int i=0;i<board.length;i++){
             for(int j=0;j<board[0].length;j++){
+                // 深度优先搜索成功找到了一个就886
+                // index每次都是0
                 if(dfs(board, words, i, j, 0))
                     return true;
             }
@@ -13,13 +15,14 @@ class Solution {
         return false;
     }
 
+    // 深度优先搜索🔍，首先就要写递归出口
     public boolean dfs(char[][] board, char[] word, int i, int j, int index) {
         // 越界，矩阵当前字符不等于字符串当前字符，不合法，返回false
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word[index])
             return false;
 
         // 矩阵当前字符=字符串当前字符，且已经是字符串最后一个字符，合法，返回true
-        if (index == word.length - 1)
+        if (index == word.length - 1) // 别忘了 - 1
             return true;
 
         // 记录下当前的字符，用于访问结束后恢复矩阵

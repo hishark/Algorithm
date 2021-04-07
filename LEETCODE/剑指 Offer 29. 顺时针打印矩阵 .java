@@ -11,7 +11,7 @@ class Solution {
 
         int index = 0;
         // 按照方向进行打印
-        while (true) {
+        while (true) { // 别忘了这个，不然就给你打印一圈OTZ
             // 从左到右
             // 1. 按照边界打印
             for (int i=left;i<=right;i++)
@@ -55,3 +55,4 @@ class Solution {
         return res;
     }
 }
+// cnt: 1

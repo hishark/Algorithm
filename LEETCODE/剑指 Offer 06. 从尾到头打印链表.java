@@ -7,8 +7,8 @@
  * }
  */
 
-// 简单粗暴无脑法，反转链表再输出
-// 别看这个智障解法
+// 遍历一遍链表求出长度，然后新建一个数组，再遍历一遍链表，从数组的最后一个位置开始放值就可以
+// 但是这个方法有点傻，还是别这么做吧- -
 class Solution {
     public int[] reversePrint(ListNode head) {
         int length = 0;
@@ -58,7 +58,7 @@ class Solution {
 // 递归
 class Solution {
     ArrayList<Integer> tmp = new ArrayList<Integer>();
-
+    
     public int[] reversePrint(ListNode head) {
         recursion(head);
         int[] res = new int[tmp.size()];

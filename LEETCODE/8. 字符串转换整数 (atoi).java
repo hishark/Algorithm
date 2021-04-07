@@ -10,42 +10,42 @@
 //min-1 = max
 class Solution {
     public int myAtoi(String str) {
-        //先去除前置的所有空格
+        // 先去除前置的所有空格
         int index = 0;
         int length = str.length();
         char[] ch = str.toCharArray();
-        while(index<length && ch[index]==' '){
+        while (index < length && ch[index] == ' ') {
             index++;
         }
 
-        //去除空格后如果到了末尾，直接返回0
-        if(index==length){
+        // 去除空格后如果到了末尾，直接返回0
+        if (index == length) {
             return 0;
         }
 
-        //判断是否为负数
+        // 判断是否为负数
         boolean isNeg = false;
-        if(ch[index]=='-'){
+        if (ch[index] == '-') {
             isNeg = true;
             index++;
-        }else if(ch[index]=='+'){
+        } else if (ch[index] == '+') {
             index++;
         }
 
         // 最终结果
         int res = 0;
 
-        //当字符为数字时进行累加
-        while(index<length && isNum(ch[index])){
+        // 当字符为数字时进行累加
+        while (index < length && isNum(ch[index])) {
             int num = ch[index] - '0';
             // 为了防止越界，将 res * 10 + num > Integer.MAX_VALUE 不等式移动了一下
             // 如果已经比最大值还要大了，就看是负数还是正数
             // 负数返回Integer.MIN_VALUE，正数返回Integer.MAX_VALUE
-            if(res > (Integer.MAX_VALUE - num) / 10){
+            if (res > (Integer.MAX_VALUE - num) / 10) {
                 return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }
             // 累加
-            res = res*10+num;
+            res = res * 10 + num;
             // 索引右移
             index++;
         }
@@ -53,10 +53,10 @@ class Solution {
         return isNeg ? -res : res;
     }
 
-    public boolean isNum(char c){
-        if(c>='0'&&c<='9'){
+    public boolean isNum(char c) {
+        if (c >= '0' && c <= '9') {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

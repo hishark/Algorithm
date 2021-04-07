@@ -39,9 +39,10 @@ class Solution {
         recursion(root.right, sum);
 
         // 回溯，删去此时路径中的最后一个结点
-        path.removeLast();
+        path.removeLast();// 在树里找路径肯定要回头的
 
 
     }
     
 }
+//cnt:1

@@ -12,12 +12,12 @@ class Solution {
         ListNode pre = head;
         ListNode aft = head;
 
-        // 先将pre移动到第k个结点的位置
+        // 先将 pre 移动到第 k 个结点的位置
         for(int i=0;i<k;i++) {
             pre = pre.next;
         }
 
-        // 然后同时移动两个指针pre和aft，直到pre为空，此时aft指向的就是倒数第k个结点
+        // 然后同时移动两个指针 pre 和 aft，直到 pre 为空，此时 aft 指向的就是倒数第 k 个结点。
         while (pre != null) {
             pre = pre.next;
             aft = aft.next;

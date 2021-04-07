@@ -46,6 +46,7 @@ class Solution {
 }
 
 // 贪心
+// 我觉得这题就不适合用dp，就是适合用贪心来做
 class Solution {
     public int cuttingRope(int n) {
         // 边界值
@@ -62,7 +63,7 @@ class Solution {
         // 当绳子最后剩下的长度为4的时候，不能再剪去长度为3的绳子段
         // 此时更好的方法是把绳子剪成长度为2的两段，因为2x2>3x1
         if (n - timesOf3 * 3 == 1)
-            timesOf3 -= 1;
+            timesOf3 -= 1; // 所以分一个3出去，和1组成4，再剪成2+2
 
         int timesOf2 = (n - timesOf3 * 3) / 2;
 

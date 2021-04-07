@@ -22,6 +22,7 @@ class Solution {
         for(int i=0;i<inorder.length;i++) {
             indexMap.put(inorder[i], i);
         }
+        // 顺序：在先序遍历中找到根节点，然后由于树的节点都不重复，可以根据根节点的值和哈希表找到他在中序遍历中的位置，继而切分出左右子树，算出左右子树的节点数量，最后去先序遍历切分出左右子树
 
         // 结点数量
         int size = preorder.length;
@@ -58,7 +59,7 @@ class Solution {
             // 递归重建左右子树
             // 参数意义：
             // 前序遍历，左子树的前序起点下标，前序终点下标，中序遍历，左子树的中序起点下标，中序终点下标
-            TreeNode leftTree = buildTree(preorder, preStart + 1, preStart + leftNodeNum, inorder, inStart, inStart + leftNodeNum - 1); // 最后一个参数也可以是rootIndex - 1
+            TreeNode leftTree = buildTree(preorder, preStart + 1, preStart + leftNodeNum, inorder, inStart, rootIndex - 1); // 最后一个参数也可以是inStart + leftNodeNum - 1
             // 参数意义：
             // 前序遍历，右子树的前序起点下标，前序终点下标，中序遍历，右子树的中序起点下标，中序终点下标
             TreeNode rightTree = buildTree(preorder, preEnd - rightNodeNum + 1, preEnd, inorder, rootIndex + 1, inEnd);

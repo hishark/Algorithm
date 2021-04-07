@@ -25,3 +25,23 @@ class Solution {
         return mode;
     }
 }
+// 1 2 3 3 3 3 4
+// num = 1 mode = 1, vote = -1
+// num = 2 mode = 1 vote = -2
+// num = 3 mode = 1 vote = -1
+// num = 3 mode = 1 vote = 0 
+// num = 3 mode = 3 vote = 1
+// num = 3 mode = 3 vote = 2
+// num = 4 mode = 3 vote = 1       
+
+/**
+ * 字节面试的时候问过我这个问题，然后问有几种方法
+ * 想到一些：
+ *  1. 给数组排序，然后取中点
+ *      快排，可以在排序中途就提前找到这个数
+ *  2. 哈希表，统计即可
+ *  3. 摩尔投票法
+ *      不同则抵消，占半数以上的数字必然留到最后。
+ */
+
+ // cnt: 1

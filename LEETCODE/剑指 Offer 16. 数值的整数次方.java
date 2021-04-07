@@ -17,10 +17,7 @@ class Solution {
 
     public double myPow(double x, long n) {
         // 边界处理
-        if (n == 0)
-            return 1;
-
-        if (x == 1)
+        if (n == 0 || x == 1) 
             return 1;
 
         // 奇偶次幂分别处理
@@ -30,7 +27,7 @@ class Solution {
             return  square * square;
         } else {
             // 奇次幂
-            double square = myPow(x, (n - 1) / 2);
+            double square = myPow(x, (n - 1) / 2); // 这里 n/2 也是一样的，重点在return的不同
             return square * square * x;
         }
     }

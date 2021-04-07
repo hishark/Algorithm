@@ -30,6 +30,7 @@ class Solution {
         // 初始化一个 set 用于排除重复的字符
         HashSet<Character> set = new HashSet<>();
 
+        // 注意这里是 i=n 不是 i=0，从 n 开始搜索的！
         for (int i = n; i < chars.length; i++) {
             // set 中如果存在当前字符，说明重复，因而剪枝，继续查看下一个字符
             if (set.contains(chars[i]))

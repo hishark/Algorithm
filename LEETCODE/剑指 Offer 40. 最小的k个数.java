@@ -25,8 +25,9 @@ class Solution {
         /**
          * Java中默认的为小根堆，实现大根堆需要重写一下 Comparator 题目要求前 k 小的数字，所以需要使用一个容量为 k 的大根堆
          * 
-         * 遍历数组的时候，若堆的大小小于 k，就直接把数字放进去 若堆的大小已经为 k，需要判断当前数字和堆顶数字的大小： 1. 若当前数字 >=
-         * 堆顶数字，那么这个数就直接跳过 2. 若当前数字 < 堆顶数字，那么就先把堆顶数字 poll 掉，然后把当前数字放入堆中
+         * 遍历数组的时候，若堆的大小小于 k，就直接把数字放进去 若堆的大小已经为 k，需要判断当前数字和堆顶数字的大小： 
+         * 1. 若当前数字 >= 堆顶数字，那么这个数就直接跳过 
+         * 2. 若当前数字 < 堆顶数字，那么就先把堆顶数字 poll 掉，然后把当前数字放入堆中
          * 
          */
         PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
@@ -34,6 +35,8 @@ class Solution {
                 return num2 - num1;
             }
         });
+
+        // ⬆️ 即：PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>((x, y) -> (y - x));
 
         // 首先，先把数字的前 k 个数字全部怼入堆中
         for (int i = 0; i < k; i++) {
@@ -59,6 +62,7 @@ class Solution {
         return ans;
     }
 }
+//read : 1
 
 // 快排
 class Solution {

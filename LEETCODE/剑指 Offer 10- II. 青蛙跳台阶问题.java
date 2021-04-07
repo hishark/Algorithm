@@ -1,4 +1,5 @@
 // dp
+// 10-1 和 10-2 就是一样的题目嘛
 class Solution {
     public int numWays(int n) {
         // 状态数组

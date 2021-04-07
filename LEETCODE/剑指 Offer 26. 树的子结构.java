@@ -30,7 +30,6 @@ class Solution {
          */
         return recur(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
     }
-
     /**
      * 
      * @param A
